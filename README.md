@@ -10,16 +10,16 @@ Consists of 8000 images. (1GB)
 
 
 ## Libraries Used ##
-Python: Most popular language that suits for ML
-TensorFlow and Keras: For preprocessing input, loading images, tokenizer, embedder, dropout, load models - LSTM
-Xception:To use CNN Pre trained on ImageNet.
-Pillow: For basic image processing functions.
-NumPy:  Storing pixels as integers in an array, expanding dimensions.
-Pandas: Used for data manipulation and storing and retrieving files.
-Pickle: Storing, saving and loading model.
-Matplotlib: Plot graphs.
-Google Colab: Easy to configure interactive environment to share and run code, with free GPU access.
-Google Drive: To make large storage dataset available amongst team.
+1. Python: Most popular language that suits for ML
+2. TensorFlow and Keras: For preprocessing input, loading images, tokenizer, embedder, dropout, load models - LSTM
+3. Xception:To use CNN Pre trained on ImageNet.
+4. Pillow: For basic image processing functions.
+5. NumPy:  Storing pixels as integers in an array, expanding dimensions.
+6. Pandas: Used for data manipulation and storing and retrieving files.
+7. Pickle: Storing, saving and loading model.
+8. Matplotlib: Plot graphs.
+9. Google Colab: Easy to configure interactive environment to share and run code, with free GPU access.
+10. Google Drive: To make large storage dataset available amongst team.
 
 
 
@@ -29,17 +29,18 @@ https://drive.google.com/drive/folders/1mTAqh80sZGBnl3b9KBrDev62fO5BR8ux?usp=sha
 
 ## Project File Structure ##
 Downloaded from dataset:
-Flicker8k_Dataset – Dataset folder which contains 8091 images.
-Flickr_8k_text – Dataset folder which contains text files and captions of images.
-Flickr_8k_text folder/Flickr8k.token.txt - the raw captions of the Flickr8k Dataset . The first column is the ID of the caption which is "image address # caption number"
-Flickr_8k.testImages.txt contains the filenames of the test images.
-Flickr_8k.trainImages.txt contains the filenames of the train images.
+1. <b> Flicker8k_Dataset </b> – Dataset folder which contains 8091 images.
+2. <b>  Flickr_8k_text </b> – Dataset folder which contains text files and captions of images.
+3. <b> Flickr_8k_text folder/Flickr8k.token.txt </b>- the raw captions of the Flickr8k Dataset . The first column is the ID of the caption which is "image address # caption number"
+4. <b> Flickr_8k.testImages.txt </b> contains the filenames of the test images.
+5. <b> Flickr_8k.trainImages.txt</b>  contains the filenames of the train images.
  
 The below files have been created by us while making the project (Can see in  https://drive.google.com/drive/folders/1mTAqh80sZGBnl3b9KBrDev62fO5BR8ux?usp=share_link ).
-Models – It will contain our trained models.
-Descriptions.txt – This text file contains all image names and their captions after preprocessing.
-Features.p – Pickle object that contains an image and their feature vector extracted from the Xception pre-trained CNN model.
-Tokenizer.p – Contains tokens mapped with an index value.
+1. Models – It will contain our trained models.
+2. Descriptions.txt – This text file contains all image names and their captions after preprocessing.
+3. Features.p – Pickle object that contains an image and their feature vector extracted from the Xception pre-trained CNN model.
+4. Tokenizer.p – Contains tokens mapped with an index value. <br>
+
 Step - wise explanation
 1. First, we import all the necessary packages - string, numpy, pandas, pillow,os, pickle, keras, and tensorflow package
 2. Getting and performing data cleaning
